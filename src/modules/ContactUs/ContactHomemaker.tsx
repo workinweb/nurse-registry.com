@@ -6,7 +6,7 @@ import { enqueueSnackbar } from "notistack";
 import React, { type SyntheticEvent } from "react";
 import Spinner from "~/components/Spinner/Spinner";
 
-export function ContactHomemaker() {
+export function ContactUs() {
     const [name, setName] = React.useState("");
     const [address, setAddress] = React.useState("");
     const [email, setEmail] = React.useState("");

@@ -28,21 +28,13 @@ export function CustomNavbar() {
 
     const menuItems = [
         { icon: <IoHome />, label: "Home", href: "/" },
-        {
-            icon: <MdOutlineMedicalInformation />,
-            label: "Our Team",
-            href: "/#Team",
-        },
 
         {
             icon: <MdOutlineMedicalServices />,
             label: "Homemaker & Companion ",
-            href: "/#Services",
-        },
-        {
-            icon: <MdConnectWithoutContact />,
-            label: "Contact Us",
-            href: "/#ContactUs",
+            href: "https://www.evanhomecare.com/",
+            target: "_blank",
+            rel: "noopener noreferrer",
         },
     ];
 
@@ -80,35 +72,17 @@ export function CustomNavbar() {
                         <DropdownItem key="services" className="mt-1">
                             <Link
                                 className="transition hover:text-gray-400"
-                                href="/#Services"
+                                href="https://www.evanhomecare.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <p className="font-bold text-primary">
-                                    Homemaker & Companion
+                                    Evan Home Care
                                 </p>
                             </Link>
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
-
-                <NavbarItem>
-                    <Link
-                        className="text-lg font-medium text-primary transition hover:text-gray-400"
-                        href="/#Team"
-                    >
-                        Our Team
-                    </Link>
-                </NavbarItem>
-            </NavbarContent>
-
-            <NavbarContent className="hidden sm:flex" justify="end">
-                <NavbarItem>
-                    <Link
-                        className="rounded-lg bg-primary px-6 py-2.5 text-lg font-medium text-white transition hover:bg-primary/90"
-                        href="#ContactUs"
-                    >
-                        Contact Us
-                    </Link>
-                </NavbarItem>
             </NavbarContent>
 
             <NavbarContent className="sm:hidden" justify="start">
